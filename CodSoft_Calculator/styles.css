@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background for the entire screen */
+    margin: 0;
+}
+
+.calculator {
+    background-color: #000; /* Black background for the calculator */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#result {
+    width: 100%;
+    padding: 10px;
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #333; /* Dark gray background for the result display */
+    color: #fff; /* Result display text color */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555; /* Button hover background color */
+}
+
+button.red {
+    color: red; /* Red colored numbers */
+}
+
+button.yellow {
+    color: yellow; /* Yellow colored numbers */
+}
